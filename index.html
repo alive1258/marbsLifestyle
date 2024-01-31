@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    <header>
+      <div
+        class="bg-gray-100 md:px-12  hidden overflow-hidden px-4 py-3 md:flex justify-between items-center md:overflow-hidden overflow-x-scroll"
+      >
+        <!-- Hidden secrets from Marbella -->
+        <div class="flex items-center space-x-4">
+          <div>
+            <i
+              class="fa-regular fa-circle-check xl:text-[20px] md:text-[14px]"
+            ></i>
+          </div>
+
+          <p class="lg:text-[14px] md:text-[10px] font-serif text-[#0d1014a8]">
+            Hidden secrets from Marbella
+          </p>
+        </div>
+        <!-- Early acces to the best and newest venues -->
+        <div class="flex items-center space-x-4">
+          <div>
+            <i
+              class="fa-regular fa-circle-check xl:text-[20px] md:text-[14px]"
+            ></i>
+          </div>
+          <p class="lg:text-[14px] md:text-[10px] font-serif text-[#0d1014a8]">
+            Early acces to the best and newest venues
+          </p>
+        </div>
+        <!-- Local experts with over 15 years experience -->
+        <div class="flex items-center space-x-4">
+          <div>
+            <i
+              class="fa-regular fa-circle-check xl:text-[20px] md:text-[14px]"
+            ></i>
+          </div>
+          <p class="lg:text-[14px] md:text-[10px] font-serif text-[#0d1014a8]">
+            Local experts with over 15 years experience
+          </p>
+        </div>
+        <!-- star  -->
+
+        <div class="flex justify-between items-center space-x-14">
+          <div class="flex items-center justify-center space-x-1">
+            <div class="text-[#c9a227]">
+              <i class="fa-solid fa-star text-[11px]"></i>
+              <i class="fa-solid fa-star text-[11px]"></i>
+              <i class="fa-solid fa-star text-[11px]"></i>
+              <i class="fa-solid fa-star text-[11px]"></i>
+              <i class="fa-solid fa-star-half-stroke text-[11px]"></i>
+            </div>
+            <div class="pt-1">
+              <p class="md:text-[15px] text-[#0d1014a8]">9/10</p>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-center space-x-2">
+            <div class="text-[#c9a227]">
+              <i class="fa-regular fa-eye text-[11px]"></i>
+            </div>
+            <div class="pt-1">
+              <p class="md:text-[14px] text-[#0d1014a8]">
+                55 <span class="font-serif">reviews</span>
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center justify-center">
+            <div class="text-[#60d394]">
+              <i class="fa-solid fa-star text-[14px]"></i>
+            </div>
+            <div class="pt-1">
+              <p class="md:text-[14px] font-semibold text-balck">Trustpilot</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+<!-- navbar -->
+
+    <nav class="md:px-12 px-4 py-3 bg-white shadow md:flex md:items-center md:justify-between">
+      <div class="flex justify-between items-center ">
+        <span class="text-2xl font-[Poppins] cursor-pointer">
+          <div class="lg:text-[26px] md:text-xl text-lg flex font-sans text-[#22223b]">
+            <span class="md:hidden pr-1 block">
+              <i class="fa-solid fa-hotel text-[#c9a227] text-[16px]"></i>
+            </span>
+            <span class="font-bold">Marbs</span>
+            <span class="font-serif">Lifestyle.com</span>
+          </div>
+        </span>
+  
+     
+        <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+          <div class="flex items-center space-x-2">
+            <button class="bg-[#c9a227] transform hover:ease-in-out hover:duration-300 hover:bg-white border-[#c9a227] border hover:text-[#c9a227] font-[300] md:text-xl text-[15px] text-white rounded-md md:px-[18px] px-2 md:py-[8px]">
+              Events
+            </button>
+            <ion-icon class="text-[#c9a227]" name="menu" onclick="Menu(this)"></ion-icon>
+          </div>
+        </span>
+        </div>
+      </div>
+  
+
+
+<div class="md:block hidden">
+  <div class="flex items-center space-x-2">
+    <i class="fa-solid fa-location-dot"></i>
+    <div class="menu-container">
+      <a href="#" class="menu-link">Location & Services Guide</a>
+     
+    </div>
+  </div>
+</div> 
+
+</div>
+<div class="md:block hidden">
+  <a href="#" class="text-gray-600 lg:text-[15px] ">
+    
+    Inspiration</a>
+</div>
+<div class="md:block hidden">
+  <a href="#" class="text-gray-600 lg:text-[16px] ">
+    Marbella and surroundings</a>
+</div>
+<div class="md:block hidden">
+  <h1 class="text-gray-600 lg:text-[16px] ">Our Choice</h1>
+</div>
+<div class="md:block hidden">
+  <a href="#" class="text-gray-600 lg:text-[16px] ">About Us</a>
+</div>
+<div class="md:block hidden">
+<div class="flex space-x-3">
+  <button
+  class="bg-[#c9a227]  transform hover:ease-in-out hover:duration-300 hover:bg-white border-[#c9a227] border hover:text-[#c9a227] font-[300] md:text-xl text-[15px] text-white rounded-md md:px-[18px] px-2 py-1 md:py-[8px]"
+>
+  Events
+</button>
+
+<button
+  class="hover:bg-[#c9a227] transform hover:ease-in-out hover:duration-300 hover:text-white hover:border-[#c9a227] border border-black font-[300] md:text-xl text-[15px] text-gray-500 rounded-md md:px-[16px] px-2 py-1 md:py-[8px]"
+>
+  Register
+</button>
+</div>
+</div>
+<div class="md:block hidden">
+  <div class="flex items-center space-x-5 cursor-pointer">
+    <div class="hover:text-[#0096c7]">
+      <i class="fa-brands fa-facebook-f text-[20px]"></i>
+    </div>
+    <div class="hover:text-[#219ebc]">
+      <i class="fa-brands fa-instagram text-[20px]"></i>
+    </div>
+    <div class="hover:text-[#0077b6]">
+      <i class="fa-brands fa-youtube text-[20px]"></i>
+    </div>
+  </div>
+</div>
+
+
+<!-- mobile menu  -->
+<ul class="md:hidden  md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+  <li class="mx-4 my-6 md:my-0">
+    <a href="#" class="text-[15px] hover:text-cyan-500 duration-500">
+      Location & Services Guide</a>
+      
+  </li>
+  <li class="mx-4 my-6 md:my-0">
+    <a href="#" class="text-[15px] hover:text-cyan-500 duration-500">Inspiration</a>
+  </li>
+  <li class="mx-4 my-6 md:my-0">
+    <a href="#" class="text-[15px] hover:text-cyan-500 duration-500">
+      Marbella and surroundings</a>
+  </li>
+  <li class="mx-4 my-6 md:my-0">
+    <a href="#" class="text-[15px] hover:text-cyan-500 duration-500">Our Choice</a>
+  </li>
+  <li class="mx-4 my-6 md:my-0">
+    <a href="#" class="text-[15px] hover:text-cyan-500 duration-500">About Us</a>
+  </li>
+
+ <div class="flex space-x-2">
+  <div class="flex space-x-3">
+    <button
+    class="bg-[#c9a227]  transform hover:ease-in-out hover:duration-300 hover:bg-white border-[#c9a227] border hover:text-[#c9a227] font-[300] md:text-xl text-[15px] text-white rounded-md md:px-[18px] px-2 py-1 md:py-[8px]"
+  >
+    Events
+  </button>
+  
+  <button
+    class="hover:bg-[#c9a227] transform hover:ease-in-out hover:duration-300 hover:text-white hover:border-[#c9a227] border border-black font-[300] md:text-xl text-[15px] text-gray-500 rounded-md md:px-[16px] px-2 py-1 md:py-[8px]"
+  >
+    Register
+  </button>
+  </div>
+  <div class="flex items-center space-x-5 cursor-pointer">
+    <div class="hover:text-[#0096c7]">
+      <i class="fa-brands fa-facebook-f text-[20px]"></i>
+    </div>
+    <div class="hover:text-[#219ebc]">
+      <i class="fa-brands fa-instagram text-[20px]"></i>
+    </div>
+    <div class="hover:text-[#0077b6]">
+      <i class="fa-brands fa-youtube text-[20px]"></i>
+    </div>
+  </div>
+ </div>
+
+</ul>
+</nav>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
