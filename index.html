@@ -1,241 +1,671 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <link rel="stylesheet" href="style.css" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+			integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
+		<link rel="stylesheet" href="style.css" />
+	</head>
 
-  </head>
-  <body>
-    <header>
-      <div
-        class="bg-gray-100 md:px-12  hidden overflow-hidden px-4 py-3 md:flex justify-between items-center md:overflow-hidden overflow-x-scroll"
-      >
-        <!-- Hidden secrets from Marbella -->
-        <div class="flex items-center space-x-4">
-          <div>
-            <i
-              class="fa-regular fa-circle-check xl:text-[20px] md:text-[14px]"
-            ></i>
-          </div>
+	<body>
+		<header>
+			<div
+				class="bg-gray-100 md:px-12 hidden overflow-hidden px-4 py-3 md:flex justify-between items-center md:overflow-hidden overflow-x-scroll"
+			>
+				<!-- Hidden secrets from Marbella -->
+				<div class="flex items-center space-x-4">
+					<div>
+						<i
+							class="fa-regular fa-circle-check xl:text-[20px] md:text-[14px]"
+						></i>
+					</div>
 
-          <p class="lg:text-[14px] md:text-[10px] font-serif text-[#0d1014a8]">
-            Hidden secrets from Marbella
-          </p>
-        </div>
-        <!-- Early acces to the best and newest venues -->
-        <div class="flex items-center space-x-4">
-          <div>
-            <i
-              class="fa-regular fa-circle-check xl:text-[20px] md:text-[14px]"
-            ></i>
-          </div>
-          <p class="lg:text-[14px] md:text-[10px] font-serif text-[#0d1014a8]">
-            Early acces to the best and newest venues
-          </p>
-        </div>
-        <!-- Local experts with over 15 years experience -->
-        <div class="flex items-center space-x-4">
-          <div>
-            <i
-              class="fa-regular fa-circle-check xl:text-[20px] md:text-[14px]"
-            ></i>
-          </div>
-          <p class="lg:text-[14px] md:text-[10px] font-serif text-[#0d1014a8]">
-            Local experts with over 15 years experience
-          </p>
-        </div>
-        <!-- star  -->
+					<p class="lg:text-[14px] md:text-[10px] font-serif text-[#0d1014a8]">
+						Hidden secrets from Marbella
+					</p>
+				</div>
+				<!-- Early acces to the best and newest venues -->
+				<div class="flex items-center space-x-4">
+					<div>
+						<i
+							class="fa-regular fa-circle-check xl:text-[20px] md:text-[14px]"
+						></i>
+					</div>
+					<p class="lg:text-[14px] md:text-[10px] font-serif text-[#0d1014a8]">
+						Early acces to the best and newest venues
+					</p>
+				</div>
+				<!-- Local experts with over 15 years experience -->
+				<div class="flex items-center space-x-4">
+					<div>
+						<i
+							class="fa-regular fa-circle-check xl:text-[20px] md:text-[14px]"
+						></i>
+					</div>
+					<p class="lg:text-[14px] md:text-[10px] font-serif text-[#0d1014a8]">
+						Local experts with over 15 years experience
+					</p>
+				</div>
+				<!-- star  -->
 
-        <div class="flex justify-between items-center space-x-14">
-          <div class="flex items-center justify-center space-x-1">
-            <div class="">
-              <img class="w-20" src="https://marbslifestyle.com/wp-content/themes/marbslifestyle/assets/images/header-star-rating.svg" alt="Header star rating">
-            </div>
-            <div class="pt-1">
-              <p class="md:text-[15px] text-[#0d1014a8]">9/10</p>
-            </div>
-          </div>
+				<div class="flex justify-between items-center space-x-14">
+					<div class="flex items-center justify-center space-x-1">
+						<div class="">
+							<img
+								class="w-20"
+								src="https://marbslifestyle.com/wp-content/themes/marbslifestyle/assets/images/header-star-rating.svg"
+								alt="Header star rating"
+							/>
+						</div>
+						<div class="pt-1">
+							<p class="md:text-[15px] text-[#0d1014a8]">9/10</p>
+						</div>
+					</div>
 
-          <div class="flex items-center justify-center space-x-2">
-            <div class="">
-              <img class="w-[16px]" src="https://marbslifestyle.com/wp-content/themes/marbslifestyle/assets/images/icon_eye.svg" alt="marbslifestyle review icon">
-            </div>
-            <div class="pt-1">
-              <p class="md:text-[14px] text-[#0d1014a8]">
-                55 <span class="font-serif">reviews</span>
-              </p>
-            </div>
-          </div>
-          <div class="flex items-center justify-center">
-            <div class="">
-              <img class="w-16" src="https://marbslifestyle.com/wp-content/uploads/2022/05/logo_trustpilot.svg" alt="logo_trustpilot">
-              <!-- <i class="fa-solid fa-star text-[14px]"></i> -->
-            </div>
-            <div class="pt-1">
-              <p class="md:text-[14px] font-semibold text-balck">Trustpilot</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-<!-- navbar -->
+					<div class="flex items-center justify-center space-x-2">
+						<div class="">
+							<img
+								class="w-[16px]"
+								src="https://marbslifestyle.com/wp-content/themes/marbslifestyle/assets/images/icon_eye.svg"
+								alt="marbslifestyle review icon"
+							/>
+						</div>
+						<div class="pt-1">
+							<p class="md:text-[14px] text-[#0d1014a8]">
+								55 <span class="font-serif">reviews</span>
+							</p>
+						</div>
+					</div>
+					<div class="flex items-center justify-center">
+						<div class="">
+							<img
+								class="w-16"
+								src="https://marbslifestyle.com/wp-content/uploads/2022/05/logo_trustpilot.svg"
+								alt="logo_trustpilot"
+							/>
+							<!-- <i class="fa-solid fa-star text-[14px]"></i> -->
+						</div>
+						<div class="pt-1">
+							<p class="md:text-[14px] font-semibold text-balck">Trustpilot</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- navbar -->
 
-    <nav class="md:px-12 px-4 py-3 bg-white shadow md:flex md:items-center md:justify-between">
-      <div class="flex justify-between items-center ">
-        <span class="text-2xl font-[Poppins] cursor-pointer">
-          <div class="lg:text-[26px] md:text-xl text-lg flex font-sans text-[#22223b]">
-            <span class="md:hidden pr-1 block">
-              <i class="fa-solid fa-hotel text-[#c9a227] text-[16px]"></i>
-            </span>
-            <span class="font-bold">Marbs</span>
-            <span class="font-serif">Lifestyle.com</span>
-          </div>
-        </span>
-  
-     
-        <span class="text-3xl cursor-pointer mx-2 md:hidden block">
-          <div class="flex items-center space-x-2">
-            <button class="bg-[#c9a227] transform hover:ease-in-out hover:duration-300 hover:bg-white border-[#c9a227] border hover:text-[#c9a227] font-[300] md:text-xl text-[15px] text-white rounded-md md:px-[18px] px-2 md:py-[8px]">
-              Events
-            </button>
-            <ion-icon class="text-[#c9a227]" name="menu" onclick="Menu(this)"></ion-icon>
-          </div>
-        </span>
-        </div>
-      </div>
-  
+		<nav
+			class="md:px-12 px-4 py-3 bg-white shadow md:flex md:items-center md:justify-between border-b border-[#c9a227] md:border-transparent"
+		>
+			<div class="flex justify-between items-center">
+				<span class="text-2xl font-[Poppins] cursor-pointer">
+					<div
+						class="lg:text-[26px] md:text-xl text-lg flex font-sans text-[#22223b]"
+					>
+						<span class="md:hidden pr-1 block">
+							<i class="fa-solid fa-hotel text-[#c9a227] text-[16px]"></i>
+						</span>
+						<span class="font-bold">Marbs</span>
+						<span class="font-serif">Lifestyle.com</span>
+					</div>
+				</span>
 
+				<span
+					class="text-3xl cursor-pointer mx-2 md:hidden block relative z-20"
+				>
+					<div class="flex items-center space-x-2">
+						<button
+							class="bg-[#c9a227] relative z-20 transform hover:ease-in-out hover:duration-300 hover:bg-white border-[#c9a227] border hover:text-[#c9a227] font-[300] md:text-xl text-[15px] text-white rounded-md md:px-[18px] px-2 md:py-[8px]"
+						>
+							Events
+						</button>
+						<ion-icon
+							class="text-[#c9a227]"
+							name="menu"
+							onclick="Menu(this)"
+						></ion-icon>
+					</div>
+				</span>
+			</div>
 
-<div class="md:block hidden">
-  <div class="flex items-center space-x-2">
-    <i class="fa-solid fa-location-dot"></i>
-    <div class="menu-container">
-      <a href="#" class="menu-link">Location & Services Guide</a>
-     
-    </div>
-  </div>
-</div> 
+			<div class="md:block hidden nav-main-ctx">
+				<div class="flex items-center space-x-2">
+					<i class="fa-solid fa-location-dot"></i>
+					<div class="menu-container">
+						<a href="#" class="menu-link">
+							<span>Location & Services Guide </span>
+							<i class="fa-solid fa-angle-down"></i>
+						</a>
+					</div>
+				</div>
+				<ul class="hov-sub-menu">
+					<li>
+						<a class="sub-list" href="#">
+							<img class="icon" src="./icons/icon-1.webp" alt="" />
+							<span>Change Name Please</span>
+						</a>
+					</li>
+					<li>
+						<a class="sub-list" href="#">
+							<img class="icon" src="./icons/resturent.webp" alt="" />
+							<span> Restaurants</span>
+						</a>
+					</li>
+					<li>
+						<a class="sub-list" href="#">
+							<img class="icon" src="./icons/hotes.webp" alt="" />
+							<span> Hotels & Resorts</span>
+						</a>
+					</li>
+					<li>
+						<a class="sub-list" href="#">
+							<img class="icon" src="./icons/dd.webp" alt="" />
+							<span> change name please 2 </span>
+						</a>
+					</li>
+					<li>
+						<a class="sub-list" href="#">
+							<img class="icon" src="./icons/world.svg" alt="" />
+							<span> change name 3 </span>
+						</a>
+					</li>
+					<li>
+						<a class="sub-list" href="#">
+							<img class="icon" src="./icons/golf.webp" alt="" />
+							<span> Golf Clubs & Courses </span>
+						</a>
+					</li>
+					<li>
+						<a class="sub-list" href="#">
+							<img class="icon" src="./icons/location.webp" alt="" />
+							<span> Things To Do </span>
+						</a>
+					</li>
+					<li>
+						<a class="sub-list" href="#">
+							<img class="icon" src="./icons/daily.webp" alt="" />
+							<span> Deli Shops </span>
+						</a>
+					</li>
+					<li>
+						<a class="sub-list" href="#">
+							<img class="icon" src="./icons/reslst.webp" alt="" />
+							<span> Real Estate Agents </span>
+						</a>
+					</li>
+					<li>
+						<a class="sub-list" href="#">
+							<img class="icon !w-4" src="./icons/plus.svg" alt="" />
+							<span class="ml-1"> View all locations </span>
+						</a>
+					</li>
+				</ul>
+			</div>
 
-</div>
-<div class="md:block hidden">
-  <a href="#" class="text-gray-600 lg:text-[15px] ">
-    
-    Inspiration</a>
-</div>
-<div class="md:block hidden">
-  <a href="#" class="text-gray-600 lg:text-[16px] ">
-    Marbella and surroundings</a>
-</div>
-<div class="md:block hidden">
-  <h1 class="text-gray-600 lg:text-[16px] ">Our Choice</h1>
-</div>
-<div class="md:block hidden">
-  <a href="#" class="text-gray-600 lg:text-[16px] ">About Us</a>
-</div>
-<div class="md:block hidden">
-<div class="flex space-x-3">
-  <button
-  class="bg-[#c9a227]  transform hover:ease-in-out hover:duration-300 hover:bg-white border-[#c9a227] border hover:text-[#c9a227] font-[300] md:text-xl text-[15px] text-white rounded-md md:px-[18px] px-2 py-1 md:py-[8px]"
->
-  Events
-</button>
+			<div class="md:block hidden nav-main-ctx">
+				<a href="#" class="text-gray-600 lg:text-[15px]">
+					Inspiration <i class="fa-solid fa-angle-down"></i
+				></a>
+				<ul class="hov-sub-menu">
+					<li>
+						<a class="sub-list" href="#">
+							<img class="icon" src="./icons/pen.webp" alt="" />
+							<span>Tips</span>
+						</a>
+					</li>
+					<li>
+						<a class="sub-list" href="#">
+							<img class="icon" src="./icons/location.webp" alt="" />
+							<span> Things To Do </span>
+						</a>
+					</li>
 
-<button
-  class="hover:bg-[#c9a227] transform hover:ease-in-out hover:duration-300 hover:text-white hover:border-[#c9a227] border border-black font-[300] md:text-xl text-[15px] text-gray-500 rounded-md md:px-[16px] px-2 py-1 md:py-[8px]"
->
-  Register
-</button>
-</div>
-</div>
-<div class="md:block hidden">
-  <div class="flex items-center space-x-5 cursor-pointer">
-    <div class="hover:text-[#0096c7]">
-      <i class="fa-brands fa-facebook-f text-[20px]"></i>
-    </div>
-    <div class="hover:text-[#219ebc]">
-      <i class="fa-brands fa-instagram text-[20px]"></i>
-    </div>
-    <div class="hover:text-[#0077b6]">
-      <i class="fa-brands fa-youtube text-[20px]"></i>
-    </div>
-  </div>
-</div>
+					<li>
+						<a class="sub-list" href="#">
+							<img class="icon" src="./icons/resturent.webp" alt="" />
+							<span> Restaurants</span>
+						</a>
+					</li>
+					<li>
+						<a class="sub-list" href="#">
+							<img class="icon" src="./icons/hotes.webp" alt="" />
+							<span> Hotels </span>
+						</a>
+					</li>
+					<li>
+						<a class="sub-list" href="#">
+							<img class="icon" src="./icons/dd.webp" alt="" />
+							<span> change name please 2 </span>
+						</a>
+					</li>
+					<li>
+						<a class="sub-list" href="#">
+							<img class="icon" src="./icons/adver.webp" alt="" />
+							<span> Adventures </span>
+						</a>
+					</li>
 
+					<li>
+						<a class="sub-list" href="#">
+							<img class="icon" src="./icons/holy.webp" alt="" />
+							<span> Holyday </span>
+						</a>
+					</li>
+					<li>
+						<a class="sub-list" href="#">
+							<img class="icon !w-4" src="./icons/plus.svg" alt="" />
+							<span class="ml-1"> View all locations </span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="md:block hidden">
+				<a href="#" class="text-gray-600 lg:text-[16px]">
+					Marbella and surroundings</a
+				>
+			</div>
+			<div class="md:block hidden">
+				<h1 class="text-gray-600 lg:text-[16px]">Our Choice</h1>
+			</div>
+			<div class="md:block hidden">
+				<a href="#" class="text-gray-600 lg:text-[16px]">About Us</a>
+			</div>
+			<div class="md:block hidden">
+				<div class="flex space-x-3">
+					<button
+						class="bg-[#c9a227] relative z-20 transform hover:ease-in-out hover:duration-300 hover:bg-white border-[#c9a227] border hover:text-[#c9a227] font-[300] md:text-xl text-[15px] text-white rounded-md md:px-[18px] px-2 py-1 md:py-[8px]"
+					>
+						Events
+					</button>
 
-<!-- mobile menu  -->
-<ul class="md:hidden  md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
-  <li class="mx-4 my-6 md:my-0">
-    <a href="#" class="text-[15px] hover:text-cyan-500 duration-500">
-      Location & Services Guide</a>
-      
-  </li>
-  <li class="mx-4 my-6 md:my-0">
-    <a href="#" class="text-[15px] hover:text-cyan-500 duration-500">Inspiration</a>
-  </li>
-  <li class="mx-4 my-6 md:my-0">
-    <a href="#" class="text-[15px] hover:text-cyan-500 duration-500">
-      Marbella and surroundings</a>
-  </li>
-  <li class="mx-4 my-6 md:my-0">
-    <a href="#" class="text-[15px] hover:text-cyan-500 duration-500">Our Choice</a>
-  </li>
-  <li class="mx-4 my-6 md:my-0">
-    <a href="#" class="text-[15px] hover:text-cyan-500 duration-500">About Us</a>
-  </li>
+					<button
+						class="hover:bg-[#c9a227] transform hover:ease-in-out hover:duration-300 hover:text-white hover:border-[#c9a227] border border-black font-[300] md:text-xl text-[15px] text-gray-500 rounded-md md:px-[16px] px-2 py-1 md:py-[8px]"
+					>
+						Register
+					</button>
+				</div>
+			</div>
+			<div class="md:block hidden">
+				<div class="flex items-center space-x-5 cursor-pointer">
+					<div class="hover:text-[#0096c7]">
+						<i class="fa-brands fa-facebook-f text-[20px]"></i>
+					</div>
+					<div class="hover:text-[#219ebc]">
+						<i class="fa-brands fa-instagram text-[20px]"></i>
+					</div>
+					<div class="hover:text-[#0077b6]">
+						<i class="fa-brands fa-youtube text-[20px]"></i>
+					</div>
+				</div>
+			</div>
 
- <div class="flex space-x-2">
-  <div class="flex space-x-3">
-    <button
-    class="bg-[#c9a227]  transform hover:ease-in-out hover:duration-300 hover:bg-white border-[#c9a227] border hover:text-[#c9a227] font-[300] md:text-xl text-[15px] text-white rounded-md md:px-[18px] px-2 py-1 md:py-[8px]"
-  >
-    Events
-  </button>
-  
-  <button
-    class="hover:bg-[#c9a227] transform hover:ease-in-out hover:duration-300 hover:text-white hover:border-[#c9a227] border border-black font-[300] md:text-xl text-[15px] text-gray-500 rounded-md md:px-[16px] px-2 py-1 md:py-[8px]"
-  >
-    Register
-  </button>
-  </div>
-  <div class="flex items-center space-x-5 cursor-pointer">
-    <div class="hover:text-[#0096c7]">
-      <i class="fa-brands fa-facebook-f text-[20px]"></i>
-    </div>
-    <div class="hover:text-[#219ebc]">
-      <i class="fa-brands fa-instagram text-[20px]"></i>
-    </div>
-    <div class="hover:text-[#0077b6]">
-      <i class="fa-brands fa-youtube text-[20px]"></i>
-    </div>
-  </div>
- </div>
+			<!-- mobile menu  -->
+			<div
+				style="min-height: calc(100vh - 65px)"
+				class="ul -mt-4 z-10 md:hidden md:items-center md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 flex flex-col justify-between"
+			>
+				<ul class="">
+					<li class="mx-4 my-6 md:my-0 mobile-menu-list">
+						<a
+							href="#"
+							data-dropdown="dropdown1"
+							aria-haspopup="true"
+							aria-expanded="false"
+							aria-label="browse"
+							class="dropdown-btn text-[15px] hover:text-cyan-500 duration-500"
+						>
+							Location & Services Guide
+							<i class="fa-solid fa-angle-down"></i>
+						</a>
+						<ul id="dropdown1" class="hov-sub-menu mobile dropdown">
+							<li>
+								<a class="sub-list" href="#">
+									<img class="icon" src="./icons/icon-1.webp" alt="" />
+									<span>Change Name Please</span>
+								</a>
+							</li>
+							<li>
+								<a class="sub-list" href="#">
+									<img class="icon" src="./icons/resturent.webp" alt="" />
+									<span> Restaurants</span>
+								</a>
+							</li>
+							<li>
+								<a class="sub-list" href="#">
+									<img class="icon" src="./icons/hotes.webp" alt="" />
+									<span> Hotels & Resorts</span>
+								</a>
+							</li>
+							<li>
+								<a class="sub-list" href="#">
+									<img class="icon" src="./icons/dd.webp" alt="" />
+									<span> change name please 2 </span>
+								</a>
+							</li>
+							<li>
+								<a class="sub-list" href="#">
+									<img class="icon" src="./icons/world.svg" alt="" />
+									<span> change name 3 </span>
+								</a>
+							</li>
+							<li>
+								<a class="sub-list" href="#">
+									<img class="icon" src="./icons/golf.webp" alt="" />
+									<span> Golf Clubs & Courses </span>
+								</a>
+							</li>
+							<li>
+								<a class="sub-list" href="#">
+									<img class="icon" src="./icons/location.webp" alt="" />
+									<span> Things To Do </span>
+								</a>
+							</li>
+							<li>
+								<a class="sub-list" href="#">
+									<img class="icon" src="./icons/daily.webp" alt="" />
+									<span> Deli Shops </span>
+								</a>
+							</li>
+							<li>
+								<a class="sub-list" href="#">
+									<img class="icon" src="./icons/reslst.webp" alt="" />
+									<span> Real Estate Agents </span>
+								</a>
+							</li>
+							<li>
+								<a class="sub-list" href="#">
+									<img class="icon !w-3" src="./icons/plus.svg" alt="" />
+									<span> View all locations </span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="mx-4 my-6 md:my-0 mobile-menu-list">
+						<a
+							href="#"
+							data-dropdown="dropdown2"
+							aria-haspopup="true"
+							aria-expanded="false"
+							aria-label="browse"
+							class="dropdown-btn text-[15px] hover:text-cyan-500 duration-500"
+							>Inspiration <i class="fa-solid fa-angle-down"></i
+						></a>
+						<ul id="dropdown2" class="hov-sub-menu mobile dropdown">
+							<li>
+								<a class="sub-list" href="#">
+									<img class="icon" src="./icons/pen.webp" alt="" />
+									<span>Tips</span>
+								</a>
+							</li>
+							<li>
+								<a class="sub-list" href="#">
+									<img class="icon" src="./icons/location.webp" alt="" />
+									<span> Things To Do </span>
+								</a>
+							</li>
 
-</ul>
-</nav>
+							<li>
+								<a class="sub-list" href="#">
+									<img class="icon" src="./icons/resturent.webp" alt="" />
+									<span> Restaurants</span>
+								</a>
+							</li>
+							<li>
+								<a class="sub-list" href="#">
+									<img class="icon" src="./icons/hotes.webp" alt="" />
+									<span> Hotels </span>
+								</a>
+							</li>
+							<li>
+								<a class="sub-list" href="#">
+									<img class="icon" src="./icons/dd.webp" alt="" />
+									<span> change name please 2 </span>
+								</a>
+							</li>
+							<li>
+								<a class="sub-list" href="#">
+									<img class="icon" src="./icons/adver.webp" alt="" />
+									<span> Adventures </span>
+								</a>
+							</li>
 
-    <script src="./index.js"></script>
-  </body>
+							<li>
+								<a class="sub-list" href="#">
+									<img class="icon" src="./icons/holy.webp" alt="" />
+									<span> Holyday </span>
+								</a>
+							</li>
+							<li>
+								<a class="sub-list" href="#">
+									<img class="icon !w-4" src="./icons/plus.svg" alt="" />
+									<span class="ml-1"> View all locations </span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="mx-4 my-6 md:my-0">
+						<a href="#" class="text-[15px] hover:text-cyan-500 duration-500">
+							Marbella and surroundings</a
+						>
+					</li>
+					<li class="mx-4 my-6 md:my-0">
+						<a href="#" class="text-[15px] hover:text-cyan-500 duration-500"
+							>Our Choice</a
+						>
+					</li>
+					<li class="mx-4 my-6 md:my-0">
+						<a href="#" class="text-[15px] hover:text-cyan-500 duration-500"
+							>About Us</a
+						>
+					</li>
+				</ul>
+				<div class="flex space-x-2">
+					<div class="flex items-center space-x-5 cursor-pointer">
+						<div class="hover:text-[#0096c7]">
+							<i class="fa-brands fa-facebook-f text-[20px]"></i>
+						</div>
+						<div class="hover:text-[#219ebc]">
+							<i class="fa-brands fa-instagram text-[20px]"></i>
+						</div>
+						<div class="hover:text-[#0077b6]">
+							<i class="fa-brands fa-youtube text-[20px]"></i>
+						</div>
+					</div>
+					<div class="flex space-x-3">
+						<button
+							class="gap-2 flex transform hover:ease-in-out hover:duration-300 hover:bg-black border-[#c9a227] border hover:text-[#c9a227] font-[300] md:text-xl text-[15px] text-[#c9a227] rounded-md md:px-[18px] px-2 py-1 md:py-[8px]"
+						>
+							<img
+								src="./icons/key.svg"
+								class="w-5 mt-[3px]"
+								alt=""
+								style="transform: rotate(45deg)"
+							/>
+							Events
+						</button>
+
+						<button
+							class="hover:bg-[#c9a227] transform hover:ease-in-out hover:duration-300 hover:text-white hover:border-[#c9a227] border border-black font-[300] md:text-xl text-[15px] text-gray-500 rounded-md md:px-[16px] px-2 py-1 md:py-[8px]"
+						>
+							Register
+						</button>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div>
+			<header class="bg-gray-100 overflow-hidden md:hidden">
+				<div
+					style="
+						width: 1220px;
+						transform: translateX(0px);
+						animation: 17.375s linear 0s infinite normal none running
+							animationAdd;
+						overflow: hidden;
+					"
+					class="md:px-12 px-2 py-1 flex justify-between items-center overflow-hidden overflow-x-scroll"
+				>
+					<!-- Hidden secrets from Marbella -->
+					<div class="flex items-center space-x-4">
+						<div>
+							<i class="fa-regular fa-circle-check text-[12px]"></i>
+						</div>
+
+						<p class="text-[12px] font-serif text-[#0d1014a8]">
+							Hidden secrets from Marbella
+						</p>
+					</div>
+					<!-- Early acces to the best and newest venues -->
+					<div class="flex items-center space-x-4">
+						<div>
+							<i class="fa-regular fa-circle-check text-[12px]"></i>
+						</div>
+						<p class="text-[12px] font-serif text-[#0d1014a8]">
+							Early acces to the best and newest venues
+						</p>
+					</div>
+					<!-- Local experts with over 15 years experience -->
+					<div class="flex items-center space-x-2">
+						<div>
+							<i class="fa-regular fa-circle-check text-[12px]"></i>
+						</div>
+						<p class="text-[12px] font-serif text-[#0d1014a8]">
+							Local experts with over 15 years experience
+						</p>
+					</div>
+					<!-- star  -->
+
+					<div class="flex justify-between items-center space-x-14">
+						<div class="flex items-center justify-center space-x-1">
+							<div class="">
+								<img
+									class="w-20"
+									src="https://marbslifestyle.com/wp-content/themes/marbslifestyle/assets/images/header-star-rating.svg"
+									alt="Header star rating"
+								/>
+							</div>
+							<div class="pt-1">
+								<p class="text-[12px] text-[#0d1014a8]">9/10</p>
+							</div>
+						</div>
+
+						<div class="flex items-center justify-center space-x-2">
+							<div class="">
+								<img
+									class="w-[16px]"
+									src="https://marbslifestyle.com/wp-content/themes/marbslifestyle/assets/images/icon_eye.svg"
+									alt="marbslifestyle review icon"
+								/>
+							</div>
+							<div class="pt-1">
+								<p class="text-[12px] text-[#0d1014a8]">
+									55 <span class="font-serif">reviews</span>
+								</p>
+							</div>
+						</div>
+						<div class="flex items-center justify-center">
+							<div class="">
+								<img
+									class="w-16"
+									src="https://marbslifestyle.com/wp-content/uploads/2022/05/logo_trustpilot.svg"
+									alt="logo_trustpilot"
+								/>
+								<!-- <i class="fa-solid fa-star text-[14px]"></i> -->
+							</div>
+							<div class="pt-1">
+								<p class="text-[12px] font-semibold text-balck">Trustpilot</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+		</div>
+		<script>
+			const dropdownBtn = document.querySelectorAll('.dropdown-btn');
+			const dropdown = document.querySelectorAll('.dropdown');
+			// const hamburgerBtn = document.getElementById('hamburger');
+			// const navMenu = document.querySelector('.menu');
+			const links = document.querySelectorAll('.dropdown a');
+
+			function setAriaExpandedFalse() {
+				dropdownBtn.forEach((btn) =>
+					btn.setAttribute('aria-expanded', 'false')
+				);
+			}
+
+			function closeDropdownMenu() {
+				dropdown.forEach((drop) => {
+					drop.classList.remove('active');
+					drop.addEventListener('click', (e) => e.stopPropagation());
+				});
+			}
+
+			dropdownBtn.forEach((btn) => {
+				btn.addEventListener('click', function (e) {
+					const dropdownIndex = e.currentTarget.dataset.dropdown;
+					const dropdownElement = document.getElementById(dropdownIndex);
+
+					dropdownElement.classList.toggle('active');
+					dropdown.forEach((drop) => {
+						if (drop.id !== btn.dataset['dropdown']) {
+							drop.classList.remove('active');
+						}
+					});
+					e.stopPropagation();
+					btn.setAttribute(
+						'aria-expanded',
+						btn.getAttribute('aria-expanded') === 'false' ? 'true' : 'false'
+					);
+				});
+			});
+
+			// close dropdown menu when the dropdown links are clicked
+			links.forEach((link) =>
+				link.addEventListener('click', () => {
+					closeDropdownMenu();
+					setAriaExpandedFalse();
+				})
+			);
+
+			// close dropdown menu when you click on the document body
+			document.documentElement.addEventListener('click', () => {
+				closeDropdownMenu();
+				setAriaExpandedFalse();
+			});
+
+			// close dropdown when the escape key is pressed
+			document.addEventListener('keydown', (e) => {
+				if (e.key === 'Escape') {
+					closeDropdownMenu();
+					setAriaExpandedFalse();
+				}
+			});
+
+			// toggle hamburger menu
+			// hamburgerBtn.addEventListener('click', toggleHamburger);
+		</script>
+
+		<script src="./index.js"></script>
+	</body>
 </html>
